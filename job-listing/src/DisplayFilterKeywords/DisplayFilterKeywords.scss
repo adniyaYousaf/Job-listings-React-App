@@ -1,0 +1,22 @@
+@use "../colors";
+.keyword {
+  height: 3rem;
+  background-color: colors.$LightGrayishCyan-FilterTablets;
+  font-weight: 700;
+  color: colors.$DesaturatedDarkCyan;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  &_name {
+    padding-inline: 1rem;
+    font-size: 1.3rem;
+  }
+  &_delete {
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    background-color: colors.$DesaturatedDarkCyan;
+  }
+}

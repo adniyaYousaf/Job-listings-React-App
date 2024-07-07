@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+:root {
+  --LightCyan: hsl(180, 45%, 71%);
+  --Cyan: hsl(180, 28%, 51%);
+  --content: rgb(237, 252, 252);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+  --ff-League: "League Spartan";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  background: url(/images/bg-header-desktop.svg) no-repeat, var(--LightCyan);
+  background-size: contain;
+  background-position: top;
+  font-family: var(--ff-League);
+}
+.content {
+  position: absolute;
+  top: 9rem;
+  height: 80rem auto;
+  width: 100%;
+  background-color: var(--content);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 5rem;
+}
+.card {
+  width: 90%;
+  height: 12rem;
+  background: white;
+  box-shadow: 1px 1px 10px var(--LightCyan);
+  margin-top: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 5px;
+}
+.card:nth-of-type(1),
+.card:nth-of-type(2) {
+  border-left: 5px solid var(--LightCyan);
+}
+.info {
+  height: 70%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+span {
+  display: flex;
+  gap: 1rem;
+}
+.black,
+.new {
+  height: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.black {
+  background: black;
+  width: 6rem;
+}
+.new {
+  background: var(--LightCyan);
+  width: 4rem;
+}
+.heading {
+  color: var(--LightCyan);
+  font-size: 1.5rem;
+}
+
+.position {
+  font-size: 1.4rem;
+}
+.description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  color: var(--Dark-Grayish-Cyan);
+  font-weight: 700;
+  opacity: 0.8;
+}
+.description p:before {
+  position: absolute;
+  content: "";
+  height: 0.3rem;
+  width: 0.3rem;
+  border-radius: 50%;
+  background-color: var(--Dark-Grayish-Cyan);
+  top: 0.3rem;
+  left: 0;
+  opacity: 0.7;
+}
+.description p:nth-of-type(1):before {
+  display: none;
+}
+.description p:nth-of-type(2):before {
+  left: 5rem;
+}
+.description p:nth-of-type(3):before {
+  left: 12rem;
+}
+
+.keywards {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 40%;
+  text-align: right;
+}
+.keywards a,
+.filterKeyword {
+  cursor: pointer;
+  color: var(--Cyan);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: hsla(180, 45%, 71%, 0.2);
+}
+.filterKeyword {
+  margin-left: 2rem;
+  border-radius: 5px 0 0 5px;
+}
+.filterDiv {
+  position: absolute;
+  top: -2.5rem;
+  left: 5%;
+  width: 90%;
+  height: 5rem;
+  background: white;
+  box-shadow: 1px 1px 10px var(--LightCyan);
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  gap: -1rem;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.cross {
+  background: var(--Cyan);
+  color: white;
+  width: 2rem;
+  height: 2.28rem;
+  font-size: 1.7rem;
+  padding: 0.3rem 0.35rem;
+  border-radius: 0 5px 5px 0;
+}

@@ -1,0 +1,62 @@
+@use "./colors";
+@use "./fonts";
+
+#root {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: auto;
+  font-size: 15px;
+  overflow-x: hidden;
+  font-family: "spartan-500";
+}
+.container {
+  width: inherit;
+  height: auto;
+  background-color: colors.$LightGrayishCyan;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 5rem;
+}
+.job-filter {
+  position: relative;
+  height: 5rem;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-inline: 1rem;
+  border-radius: 1rem;
+}
+
+.clear-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  color: colors.$DarkGrayishCyan;
+  font-weight: 800;
+  background: none;
+  border: none;
+  &:hover {
+    color: colors.$DesaturatedDarkCyan;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-top: 1rem;
+    gap: 5rem;
+  }
+}
