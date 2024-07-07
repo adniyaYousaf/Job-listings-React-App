@@ -53,7 +53,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://adniya-yousaf.netlify.app/)
+- Website - [Adniya Yousaf](https://adniya-yousaf.netlify.app/)
 
 
 
