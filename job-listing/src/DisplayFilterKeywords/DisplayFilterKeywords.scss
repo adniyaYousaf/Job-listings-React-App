@@ -1,22 +1,26 @@
 @use "../colors";
+@import "../fontSize.scss";
+
 .keyword {
   height: 3rem;
   background-color: colors.$LightGrayishCyan-FilterTablets;
   font-weight: 700;
   color: colors.$DesaturatedDarkCyan;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border-radius: 0.5rem;
   overflow: hidden;
   &_name {
     padding-inline: 1rem;
-    font-size: 1.3rem;
+    font-size: var(--fs);
   }
   &_delete {
     cursor: pointer;
     width: 3rem;
     height: 3rem;
     color: white;
+    font-size: var(--fs);
     background-color: colors.$DesaturatedDarkCyan;
   }
 }

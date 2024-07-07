@@ -1,5 +1,6 @@
 @use "./colors";
 @use "./fonts";
+@import "./fontSize.scss";
 
 #root {
   width: 100vw;
@@ -32,6 +33,7 @@ body {
 .job-filter {
   position: relative;
   height: 5rem;
+  max-height: auto;
   background-color: white;
   width: 100%;
   display: flex;
