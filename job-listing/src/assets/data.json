@@ -137,7 +137,7 @@
   {
     "id": 8,
     "company": "Insure",
-    "logo": "images/insure.svg",
+    "logo": "./images/insure.svg",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
